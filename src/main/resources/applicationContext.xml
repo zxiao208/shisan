@@ -17,7 +17,7 @@
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url"
-                  value="jdbc:mysql://localhost:3306/shisan"/>
+                  value="jdbc:mysql://localhost:3306/shisan?seUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
         <!-- 改为你的地址即可 -->
         <property name="username" value="root"/>
         <property name="password" value="zhaoxiao123"/>
@@ -27,7 +27,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <!-- 自动扫描mappers.xml文件 -->
-        <!--<property name="mapperLocations" value="classpath:mappers/*.xml"></property>-->
+        <property name="mapperLocations" value="classpath:mappers/*.xml"></property>
         <!-- mybatis配置文件 -->
         <property name="configLocation" value="classpath:mybatis-config.xml"></property>
     </bean>
