@@ -5,7 +5,7 @@
   <display-name>ssm-demo</display-name>
   <!--Start 欢迎页-->
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>login-status-test.html</welcome-file>
   </welcome-file-list>
   <!--End 欢迎页-->
   <context-param>
