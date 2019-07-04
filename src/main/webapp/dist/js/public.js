@@ -156,7 +156,7 @@ function checkCookie() {
         window.location.href = "login.html";
     }
     else {
-        $('#tip').html("Hello SSM!<br>看到此页面证明你登陆成功，且cookie中已经有合法的用户令牌了！");
+        $('#tip').html("登录成功!<br>看到此页面证明你登陆成功，且cookie中已经有合法的用户令牌了！");
     }
 }
 
